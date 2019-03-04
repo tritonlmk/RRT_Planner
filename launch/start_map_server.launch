@@ -1,0 +1,4 @@
+<launch>
+  <arg name="orig_map_file" default="$(find rrt_planner)/assets/map_ps.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg orig_map_file)"/>
+</launch>

@@ -1,0 +1,5 @@
+geometry_msgs/Pose2D initial_configuration
+geometry_msgs/Pose2D destination_configuration
+bool model_flag
+---
+geometry_msgs/Pose2D[] globalpath

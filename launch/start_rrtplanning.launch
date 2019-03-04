@@ -1,0 +1,10 @@
+<launch>
+  <!-- declare arg to be passed in -->
+  <arg name="save_img_path"/>
+  <arg name="load_img_path"/>
+  <!-- start rrtplanner node -->
+  <node pkg="rrt_planner" type="rrt_planner_node" name="rrt_planner" output="screen">
+    <param name="output_image_location" type="string" value="$(arg save_img_path)"/>
+    <param name="base_image_location" type="string" value="$(arg load_img_path)"/>
+  </node>
+</launch>

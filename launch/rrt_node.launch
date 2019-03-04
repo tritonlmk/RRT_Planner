@@ -1,0 +1,13 @@
+<launch>
+    <!-- start map_server -->
+  <include file="$(find rrt_planner)/launch/start_map_server.launch">
+    <!-- all vars that start_map_server.launch must be set -->
+    <arg name="orig_map_file" value="$(find rrt_planner)/assets/map_ps.yaml"/>
+  </include>
+  <include file="$(find rrt_planner)/launch/start_rrtplanning.launch">
+    <!-- all vars that start_rrtplanning.launch must be set -->
+    <arg name="save_img_path" value="$(find rrt_planner)/assets/test_show_image.jpg"/>
+    <arg name="load_img_path" value="$(find rrt_planner)/assets/probablity_map.jpg"/>
+  </include>
+  <include file="$(find map_proc)/launch/map_proc.launch"/>
+</launch>
