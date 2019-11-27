@@ -244,7 +244,6 @@ void lmk_rrtplanning::RrtPlanner::TestShow() {
 			}
                         temp_node_pointer->parent = nearest_node_pointer;
 			rrt_tree.adding_elements(*temp_node_pointer);
-			temp_node_pointer->parent = nearest_node_pointer;
 			// delete temp_node_pointer;
 		} else {}
 		if (reach_destination(new_config)) {
