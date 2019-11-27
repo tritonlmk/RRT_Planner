@@ -242,7 +242,7 @@ void lmk_rrtplanning::RrtPlanner::TestShow() {
 				ROS_ERROR("nullptr generated when creating new node");
 				return;
 			}
-      temp_node_pointer->parent = nearest_node_pointer;
+                        temp_node_pointer->parent = nearest_node_pointer;
 			rrt_tree.adding_elements(*temp_node_pointer);
 			temp_node_pointer->parent = nearest_node_pointer;
 			// delete temp_node_pointer;
